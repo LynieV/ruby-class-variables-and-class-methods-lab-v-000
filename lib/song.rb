@@ -33,8 +33,6 @@ class Song
     genre_hash.each { |k, v| genre_hash[k]=v.length}
   end
   
-  
-  
   def self.artist_count
     artist_hash = @@artists.group_by{ |v| v }
     artist_hash.each { |k, v| artist_hash[k]=v.length}
